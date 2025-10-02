@@ -1,25 +1,104 @@
+/* Reset dasar */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
   padding: 0;
-  background: #f4f4f9;
+  background: #f4f6f9;
+  color: #333;
 }
 
+/* Navigasi */
 nav {
-  background: #333;
-  padding: 10px;
+  background: #007bff;
+  padding: 15px;
+  text-align: center;
 }
 
 nav a {
   color: white;
+  margin: 0 15px;
   text-decoration: none;
-  margin: 0 10px;
+  font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-h1 {
-  color: #333;
+/* Kontainer isi */
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
+}
+
+/* Judul */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* Label & input */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Tombol */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: scale(1.02);
+}
+
+button:active {
+  background: #004494;
+  transform: scale(0.98);
+}
+
+/* Animasi masuk */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
